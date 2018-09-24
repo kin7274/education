@@ -38,6 +38,7 @@
             android:textStyle="normal" />
 
         <TextView
+            android:id="@+id/index_no2"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:fontFamily="@font/my_font_family"
@@ -109,6 +110,7 @@
             android:background="#ffb7ac" />
 
         <TextView
+            android:id="@+id/abc"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:fontFamily="@font/my_font_family"

@@ -1,6 +1,9 @@
 package com.dreamwalker.diabeteseducation.introduction;
 
+import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
@@ -14,12 +17,9 @@ import com.dreamwalker.diabeteseducation.R;
 import java.util.ArrayList;
 
 public class IntroActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener, View.OnClickListener {
+    ExpandableListView elv;
     ScrollView scrollview;
-    // TODO 확장형 리스트뷰 :사이즈 조절, 내용 추가
-    // TODO 스크롤뷰 : 처음 열면 맨 위로 올라오도록!
-
-    int positionY;
-    TextView index_no1, index_no2_1, index_no2_2, index_no2_3, index_no2_4, index_no2_5;
+    TextView index_no1, index_no2, index_no2_1, index_no2_2, index_no2_3, index_no2_4, index_no2_5, abc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +27,7 @@ public class IntroActivity extends AppCompatActivity implements AdapterView.OnIt
         setContentView(R.layout.activity_intro);
         set_scroll();
         set();
-
-        ExpandableListView elv = (ExpandableListView) findViewById(R.id.elv);
+        elv = (ExpandableListView) findViewById(R.id.elv);
         final ArrayList<Index> index = getData();
         //create and bind to adatper
         MyAdapter adapter = new MyAdapter(this, index);
@@ -37,8 +36,7 @@ public class IntroActivity extends AppCompatActivity implements AdapterView.OnIt
         elv.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
             @Override
             public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
-                Toast.makeText(getApplicationContext(), index.get(groupPosition).contents.get(childPosition), Toast.LENGTH_LONG).show();
-                // TODO 팝업창으로 하는건 어떨까
+                show(index.get(groupPosition), index.get(groupPosition).contents.get(childPosition));
                 return false;
             }
         });
@@ -46,22 +44,23 @@ public class IntroActivity extends AppCompatActivity implements AdapterView.OnIt
 
     // 스크롤뷰 설정
     public void set_scroll() {
-        ScrollView scrollview = (ScrollView) findViewById(R.id.scrollview);
-
-        scrollview.scrollTo(0, 0);
-        // 수평 스크롤바 사용 가능 설정
+        scrollview = (ScrollView) findViewById(R.id.scrollview);
+        scrollview.smoothScrollTo(0, 0);
         scrollview.setHorizontalScrollBarEnabled(true);
     }
 
     // 객체 생성
     public void set() {
         index_no1 = (TextView) findViewById(R.id.index_no1);
+        index_no2 = (TextView) findViewById(R.id.index_no2);
         index_no2_1 = (TextView) findViewById(R.id.index_no2_1);
         index_no2_2 = (TextView) findViewById(R.id.index_no2_2);
         index_no2_3 = (TextView) findViewById(R.id.index_no2_3);
         index_no2_4 = (TextView) findViewById(R.id.index_no2_4);
         index_no2_5 = (TextView) findViewById(R.id.index_no2_5);
+        abc = (TextView) findViewById(R.id.abc);
         index_no1.setOnClickListener(this);
+        index_no2.setOnClickListener(this);
         index_no2_1.setOnClickListener(this);
         index_no2_2.setOnClickListener(this);
         index_no2_3.setOnClickListener(this);
@@ -108,37 +107,20 @@ public class IntroActivity extends AppCompatActivity implements AdapterView.OnIt
     public void onNothingSelected(AdapterView<?> parent) {
     }
 
-
+    // 목차 클릭 시 '내용 시작'으로 이동
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.index_no1:
-                scrollview.post(new Runnable() {
-                    public void run() {
-                        scrollview.smoothScrollTo(index_no1.getScrollX(), index_no1.getScrollY());
+        scrollview.scrollTo(0, abc.getTop());
+    }
+    public void show(Index title, String context){
+        final AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(title.toString());
+        builder.setMessage(context);
+        builder.setPositiveButton("확인",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
                     }
                 });
-                break;
-            case R.id.index_no2_1:
-                int positionY1 = index_no2_1.getTop();
-
-                break;
-            case R.id.index_no2_2:
-                int positionY2 = index_no2_2.getTop();
-
-                break;
-            case R.id.index_no2_3:
-                int positionY3 = index_no2_3.getTop();
-
-                break;
-            case R.id.index_no2_4:
-                int positionY4 = index_no2_4.getTop();
-
-                break;
-            case R.id.index_no2_5:
-                int positionY5 = index_no2_5.getTop();
-
-                break;
-        }
+        builder.show();
     }
 }
