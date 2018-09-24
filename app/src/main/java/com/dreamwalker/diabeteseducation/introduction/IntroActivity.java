@@ -112,6 +112,8 @@ public class IntroActivity extends AppCompatActivity implements AdapterView.OnIt
     public void onClick(View v) {
         scrollview.scrollTo(0, abc.getTop());
     }
+
+    // 다이얼로그 메서드
     public void show(Index title, String context){
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle(title.toString());
