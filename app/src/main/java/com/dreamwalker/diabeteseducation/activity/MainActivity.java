@@ -7,6 +7,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
 import com.dreamwalker.diabeteseducation.R;
 
@@ -29,29 +30,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     // 객체 생성
     public void set() {
-        Button action_word = (Button) findViewById(R.id.action_word);
-        Button action_image = (Button) findViewById(R.id.action_image);
-        Button action_introduction = (Button) findViewById(R.id.action_introduction);
-        action_word.setOnClickListener(this);
-        action_image.setOnClickListener(this);
-        action_introduction.setOnClickListener(this);
+        LinearLayout layout1 = (LinearLayout) findViewById(R.id.layout1);
+        LinearLayout layout2 = (LinearLayout) findViewById(R.id.layout2);
+        layout1.setOnClickListener(this);
+        layout2.setOnClickListener(this);
     }
 
     // 클릭이벤트
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.action_introduction:
-                // 앱 소개 페이지로 이동
-                Intent action_introduction = new Intent(MainActivity.this, AppIntroductionActivity.class);
-                startActivity(action_introduction);
-                break;
-            case R.id.action_word:
+            case R.id.layout1:
                 // 용어 페이지로 이동
                 Intent intent_word = new Intent(MainActivity.this, EduWordActivity.class);
                 startActivity(intent_word);
                 break;
-            case R.id.action_image:
+            case R.id.layout2:
                 // 메뉴얼 페이지로 이동
                 Intent intent_image = new Intent(MainActivity.this, EduPdfActivity.class);
                 startActivity(intent_image);
