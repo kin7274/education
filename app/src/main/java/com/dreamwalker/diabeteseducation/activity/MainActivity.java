@@ -5,9 +5,11 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.dreamwalker.diabeteseducation.R;
 
@@ -58,5 +60,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent_image);
                 break;
         }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            // 앱 평가하기
+            case R.id.item1:
+                Toast.makeText(getApplicationContext(), "플레이스토어 댓글로 강제이동", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.item2:
+                // 앱 소개 페이지로 이동
+                Intent intent = new Intent(MainActivity.this, AppIntroductionActivity.class);
+                startActivity(intent);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
