@@ -19,23 +19,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setToolbar();
-        set();
-    }
+        setToolbar(); }
 
     // 툴바
     public void setToolbar() {
         Toolbar mytoolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(mytoolbar);
         getSupportActionBar().setTitle("");
-    }
-
-    // 객체 생성
-    public void set() {
-        LinearLayout layout1 = (LinearLayout) findViewById(R.id.layout1);
-        LinearLayout layout2 = (LinearLayout) findViewById(R.id.layout2);
-        layout1.setOnClickListener(this);
-        layout2.setOnClickListener(this);
     }
 
     // 메뉴.xml
