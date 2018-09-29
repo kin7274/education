@@ -23,53 +23,53 @@
             android:textStyle="normal" />
     </android.support.v7.widget.Toolbar>
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/layout1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="vertical">
+        android:layout_weight="1">
 
         <ImageView
-            android:scaleType="center"
-            android:layout_gravity="center_horizontal"
+            android:id="@+id/image1"
             android:layout_width="130dp"
             android:layout_height="130dp"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
             android:src="@drawable/document" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_gravity="bottom"
+            android:layout_below="@+id/image1"
             android:fontFamily="@font/my_font_family"
+            android:gravity="center"
             android:text="용 어"
             android:textSize="20sp"
             android:textStyle="normal" />
-    </LinearLayout>
+    </RelativeLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/layout2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="vertical">
+        android:layout_weight="1">
 
         <ImageView
-            android:scaleType="center"
-            android:layout_gravity="center_horizontal"
+            android:id="@+id/image2"
             android:layout_width="130dp"
             android:layout_height="130dp"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
             android:src="@drawable/task" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_gravity="bottom"
+            android:layout_below="@+id/image2"
             android:fontFamily="@font/my_font_family"
+            android:gravity="center"
             android:text="메뉴얼"
             android:textSize="20sp"
             android:textStyle="normal" />
-    </LinearLayout>
+    </RelativeLayout>
 </LinearLayout>
