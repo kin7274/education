@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.dreamwalker.diabeteseducation.R;
@@ -19,13 +20,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setToolbar(); }
+        setToolbar();
+        set();
+    }
 
     // 툴바
     public void setToolbar() {
         Toolbar mytoolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(mytoolbar);
         getSupportActionBar().setTitle("");
+    }
+
+    // 객체 생성
+    public void set() {
+        RelativeLayout layout1 = (RelativeLayout) findViewById(R.id.layout1);
+        RelativeLayout layout2 = (RelativeLayout) findViewById(R.id.layout2);
+        layout1.setOnClickListener(this);
+        layout2.setOnClickListener(this);
     }
 
     // 메뉴.xml
