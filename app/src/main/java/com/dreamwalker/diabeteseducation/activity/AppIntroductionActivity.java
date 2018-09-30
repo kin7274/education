@@ -21,18 +21,6 @@ public class AppIntroductionActivity extends AppCompatActivity implements View.O
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_app_introduction);
         set();
-
-        // 버전코드와 버전이름을 불러옴
-        PackageInfo pi = null;
-        try {
-            pi = getPackageManager().getPackageInfo(getPackageName(), 0);
-        } catch (PackageManager.NameNotFoundException e) {
-            e.printStackTrace();
-        }
-        // 이건 버전코드
-        int versionCode = pi.versionCode;
-        // 이건 버전네임
-        String versionName = pi.versionName;
     }
 
     // 객체 생성
@@ -48,6 +36,26 @@ public class AppIntroductionActivity extends AppCompatActivity implements View.O
     }
 
 
+    String searchV(){
+        // 버전코드와 버전이름을 불러옴
+        PackageInfo pi = null;
+        try {
+            pi = getPackageManager().getPackageInfo(getPackageName(), 0);
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+        // 이건 버전코드
+//        int versionCode = pi.versionCode;
+        // 이건 버전네임
+        String versionName = pi.versionName;
+        String aa;
+        if(versionName.equals("1.0")){
+            aa = "최신입니다";
+        } else {
+            aa = "최신이 아니다! 업데이트해줘!";
+        }
+        return aa;
+    }
 
     //
     //
@@ -64,7 +72,7 @@ public class AppIntroductionActivity extends AppCompatActivity implements View.O
 
                 AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
                 alertDialogBuilder.setTitle("버전체크하겠슴다!")
-                        .setMessage("내용")
+                        .setMessage("" + searchV())
                         .setPositiveButton("확인", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
