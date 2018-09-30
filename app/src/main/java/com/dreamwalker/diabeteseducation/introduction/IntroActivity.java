@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ExpandableListView;
@@ -17,6 +18,7 @@ import com.dreamwalker.diabeteseducation.R;
 import java.util.ArrayList;
 
 public class IntroActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener, View.OnClickListener {
+    private final static String TAG = IntroActivity.class.getSimpleName();
     ExpandableListView elv;
     ScrollView scrollview;
     TextView index_no1, index_no2, index_no2_1, index_no2_2, index_no2_3, index_no2_4, index_no2_5, abc;
@@ -51,21 +53,7 @@ public class IntroActivity extends AppCompatActivity implements AdapterView.OnIt
 
     // 객체 생성
     public void set() {
-        index_no1 = (TextView) findViewById(R.id.index_no1);
-        index_no2 = (TextView) findViewById(R.id.index_no2);
-        index_no2_1 = (TextView) findViewById(R.id.index_no2_1);
-        index_no2_2 = (TextView) findViewById(R.id.index_no2_2);
-        index_no2_3 = (TextView) findViewById(R.id.index_no2_3);
-        index_no2_4 = (TextView) findViewById(R.id.index_no2_4);
-        index_no2_5 = (TextView) findViewById(R.id.index_no2_5);
         abc = (TextView) findViewById(R.id.abc);
-        index_no1.setOnClickListener(this);
-        index_no2.setOnClickListener(this);
-        index_no2_1.setOnClickListener(this);
-        index_no2_2.setOnClickListener(this);
-        index_no2_3.setOnClickListener(this);
-        index_no2_4.setOnClickListener(this);
-        index_no2_5.setOnClickListener(this);
     }
 
     //add and get data for list
@@ -110,11 +98,12 @@ public class IntroActivity extends AppCompatActivity implements AdapterView.OnIt
     // 목차 클릭 시 '내용 시작'으로 이동
     @Override
     public void onClick(View v) {
-        scrollview.scrollTo(0, abc.getTop());
+//        scrollview.scrollTo(0, abc.getTop());
+        scrollview.scrollTo(0, -elv.getChildAt(3).getTop() + elv.getFirstVisiblePosition()*elv.getChildAt(3).getHeight());
     }
 
     // 다이얼로그 메서드
-    public void show(Index title, String context){
+    public void show(Index title, String context) {
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle(title.toString());
         builder.setMessage(context);
