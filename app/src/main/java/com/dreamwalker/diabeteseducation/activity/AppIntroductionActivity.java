@@ -44,7 +44,8 @@ public class AppIntroductionActivity extends AppCompatActivity implements View.O
                 break;
             case R.id.menu2:
                 // 2번 메뉴 : 앱버전 정보
-                Toast.makeText(getApplicationContext(), "커스텀 다이얼로그 추가 예정", Toast.LENGTH_SHORT).show();
+                
+//                Toast.makeText(getApplicationContext(), "커스텀 다이얼로그 추가 예정", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.menu3:
                 // 3번 메뉴 : 개발자 정보
