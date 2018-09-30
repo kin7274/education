@@ -32,6 +32,7 @@ public class AppIntroductionActivity extends AppCompatActivity implements View.O
         menu4.setOnClickListener(this);
     }
 
+    //
     // 클릭 이벤트
     public void onClick(View v) {
         switch (v.getId()) {
