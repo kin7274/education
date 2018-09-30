@@ -33,6 +33,7 @@ public class AppIntroductionActivity extends AppCompatActivity implements View.O
     }
 
     //
+    //
     // 클릭 이벤트
     public void onClick(View v) {
         switch (v.getId()) {
