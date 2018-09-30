@@ -21,7 +21,7 @@ public class IntroActivity extends AppCompatActivity implements AdapterView.OnIt
     private final static String TAG = IntroActivity.class.getSimpleName();
     ExpandableListView elv;
     ScrollView scrollview;
-    TextView index_no1, index_no2, index_no2_1, index_no2_2, index_no2_3, index_no2_4, index_no2_5, abc;
+    TextView abc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -99,7 +99,6 @@ public class IntroActivity extends AppCompatActivity implements AdapterView.OnIt
     @Override
     public void onClick(View v) {
 //        scrollview.scrollTo(0, abc.getTop());
-        scrollview.scrollTo(0, -elv.getChildAt(3).getTop() + elv.getFirstVisiblePosition()*elv.getChildAt(3).getHeight());
     }
 
     // 다이얼로그 메서드
