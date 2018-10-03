@@ -35,6 +35,7 @@ public class AppIntroductionActivity extends AppCompatActivity implements View.O
         menu4.setOnClickListener(this);
     }
 
+<<<<<<< HEAD
 
     String searchV(){
         // 버전코드와 버전이름을 불러옴
@@ -57,6 +58,8 @@ public class AppIntroductionActivity extends AppCompatActivity implements View.O
         return aa;
     }
 
+=======
+>>>>>>> parent of 759418a... 오 댓다
     //
     // 클릭 이벤트
     public void onClick(View v) {
