@@ -28,7 +28,7 @@ public class IntroActivity extends AppCompatActivity implements AdapterView.OnIt
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
         set_scroll();
-        set();
+        abc = (TextView) findViewById(R.id.abc);
         elv = (ExpandableListView) findViewById(R.id.elv);
         final ArrayList<Index> index = getData();
         //create and bind to adatper
@@ -49,11 +49,6 @@ public class IntroActivity extends AppCompatActivity implements AdapterView.OnIt
         scrollview = (ScrollView) findViewById(R.id.scrollview);
         scrollview.smoothScrollTo(0, 0);
         scrollview.setHorizontalScrollBarEnabled(true);
-    }
-
-    // 객체 생성
-    public void set() {
-        abc = (TextView) findViewById(R.id.abc);
     }
 
     //add and get data for list
