@@ -18,7 +18,6 @@ import com.dreamwalker.diabeteseducation.R;
 import java.util.ArrayList;
 
 public class IntroActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener, View.OnClickListener {
-    private final static String TAG = IntroActivity.class.getSimpleName();
     ExpandableListView elv;
     ScrollView scrollview;
     TextView abc;
@@ -31,10 +30,8 @@ public class IntroActivity extends AppCompatActivity implements AdapterView.OnIt
         abc = (TextView) findViewById(R.id.abc);
         elv = (ExpandableListView) findViewById(R.id.elv);
         final ArrayList<Index> index = getData();
-        //create and bind to adatper
         MyAdapter adapter = new MyAdapter(this, index);
         elv.setAdapter(adapter);
-        //set onclick listener
         elv.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
             @Override
             public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
@@ -90,7 +87,6 @@ public class IntroActivity extends AppCompatActivity implements AdapterView.OnIt
     public void onNothingSelected(AdapterView<?> parent) {
     }
 
-    // 목차 클릭 시 '내용 시작'으로 이동
     @Override
     public void onClick(View v) {
     }
