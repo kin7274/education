@@ -12,8 +12,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DevelopActivity extends AppCompatActivity {
-
-    //
     private MyRecyclerAdapter mAdapter;
     RecyclerView recyclerView;
     List<CardItem> dataList;
