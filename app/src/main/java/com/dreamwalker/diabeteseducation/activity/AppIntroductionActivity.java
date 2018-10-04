@@ -9,6 +9,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.dreamwalker.diabeteseducation.R;
 import com.dreamwalker.diabeteseducation.introduction.ChangeLogActivity;
@@ -35,32 +36,6 @@ public class AppIntroductionActivity extends AppCompatActivity implements View.O
         menu4.setOnClickListener(this);
     }
 
-<<<<<<< HEAD
-
-    String searchV(){
-        // 버전코드와 버전이름을 불러옴
-        PackageInfo pi = null;
-        try {
-            pi = getPackageManager().getPackageInfo(getPackageName(), 0);
-        } catch (PackageManager.NameNotFoundException e) {
-            e.printStackTrace();
-        }
-        // 이건 버전코드
-//        int versionCode = pi.versionCode;
-        // 이건 버전네임
-        String versionName = pi.versionName;
-        String aa;
-        if(versionName.equals("1.0")){
-            aa = "최신입니다";
-        } else {
-            aa = "최신이 아니다! 업데이트해줘!";
-        }
-        return aa;
-    }
-
-=======
->>>>>>> parent of 759418a... 오 댓다
-    //
     // 클릭 이벤트
     public void onClick(View v) {
         switch (v.getId()) {
@@ -71,19 +46,7 @@ public class AppIntroductionActivity extends AppCompatActivity implements View.O
                 break;
             case R.id.menu2:
                 // 2번 메뉴 : 앱버전 정보
-
-                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-                alertDialogBuilder.setTitle("버전체크하겠슴다!")
-                        .setMessage("" + searchV())
-                        .setPositiveButton("확인", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                dialog.dismiss();
-                            }
-                        });
-                AlertDialog alertDialog = alertDialogBuilder.create();
-                alertDialog.show();
-//                Toast.makeText(getApplicationContext(), "커스텀 다이얼로그 추가 예정", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "커스텀 다이얼로그 추가 예정", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.menu3:
                 // 3번 메뉴 : 개발자 정보

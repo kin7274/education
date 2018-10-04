@@ -64,7 +64,6 @@ public class EduWordActivity extends AppCompatActivity implements MyRecyclerAdap
     // 클릭 이벤트
     @Override
     public void onItemClicked(int position) {
-
         CustomDialog dialog = new CustomDialog(EduWordActivity.this, title(position), content(position));
         // 바깥 클릭 시 꺼짐
         dialog.setCanceledOnTouchOutside(true);
@@ -82,13 +81,10 @@ public class EduWordActivity extends AppCompatActivity implements MyRecyclerAdap
         Display display = getWindowManager().getDefaultDisplay();
         Point size = new Point();
         display.getSize(size);
-
         // 비율에 맞게 다이얼로그 크기를 지정
         Window window = dialog.getWindow();
-
         int x = (int)(size.x * 0.8f);
         int y = (int)(size.y * 0.7f);
-
         window.setLayout(x, y);
     }
 

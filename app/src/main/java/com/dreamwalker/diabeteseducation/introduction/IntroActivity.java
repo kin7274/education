@@ -98,7 +98,6 @@ public class IntroActivity extends AppCompatActivity implements AdapterView.OnIt
     // 목차 클릭 시 '내용 시작'으로 이동
     @Override
     public void onClick(View v) {
-//        scrollview.scrollTo(0, abc.getTop());
     }
 
     // 다이얼로그 메서드
