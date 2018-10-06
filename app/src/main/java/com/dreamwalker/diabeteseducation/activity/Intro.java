@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Bundle;
+import android.view.WindowManager;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.dreamwalker.diabeteseducation.R;
@@ -25,6 +26,7 @@ public class Intro extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.intro);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         LottieAnimationView animationView = (LottieAnimationView) findViewById(R.id.animation_view);
         // 반복 설정
         animationView.loop(true);
