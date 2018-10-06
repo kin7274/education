@@ -93,7 +93,7 @@ public class EduWordActivity extends AppCompatActivity implements MyRecyclerAdap
         // 비율에 맞게 다이얼로그 크기를 지정
         Window window = dialog.getWindow();
         int x = (int)(size.x * 0.8f);
-        int y = (int)(size.y * 0.7f);
+        int y = (int)(size.y * 0.5f);
         window.setLayout(x, y);
     }
 

@@ -33,11 +33,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ChangeLogActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dreamwalker/diabeteseducation/introduction/ChangeLogActivity.java">
+      <file leaf-file-name="EduWordActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dreamwalker/diabeteseducation/activity/EduWordActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="342">
+              <caret line="95" column="34" selection-start-line="95" selection-start-column="34" selection-end-line="95" selection-end-column="34" />
+              <folding>
+                <element signature="e#2348#2394#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -2297,12 +2300,12 @@
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/dreamwalker/diabeteseducation/activity/MainActivity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dreamwalker/diabeteseducation/activity/EduWordActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dreamwalker/diabeteseducation/activity/EduPdfActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dreamwalker/diabeteseducation/introduction/IntroActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dreamwalker/diabeteseducation/activity/AppIntroductionActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dreamwalker/diabeteseducation/introduction/DevelopActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dreamwalker/diabeteseducation/introduction/ChangeLogActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dreamwalker/diabeteseducation/activity/EduWordActivity.java" />
       </list>
     </option>
   </component>
@@ -2582,13 +2585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dreamwalker/diabeteseducation/activity/EduWordActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="48" column="83" lean-forward="true" selection-start-line="48" selection-start-column="83" selection-end-line="48" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dreamwalker/diabeteseducation/activity/AppIntroductionActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -2619,8 +2615,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dreamwalker/diabeteseducation/introduction/ChangeLogActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="209">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dreamwalker/diabeteseducation/activity/EduWordActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="95" column="34" selection-start-line="95" selection-start-column="34" selection-end-line="95" selection-end-column="34" />
+          <folding>
+            <element signature="e#2348#2394#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
