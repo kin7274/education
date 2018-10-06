@@ -33,11 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="EduWordActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EduWordActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dreamwalker/diabeteseducation/activity/EduWordActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="70" column="5" lean-forward="true" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+            <state relative-caret-position="285">
+              <caret line="95" column="35" selection-start-line="95" selection-start-column="35" selection-end-line="95" selection-end-column="35" />
               <folding>
                 <element signature="e#1518#1563#0" expanded="true" />
                 <element signature="e#1601#1646#0" expanded="true" />
@@ -89,7 +89,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
@@ -2370,9 +2370,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/dreamwalker/diabeteseducation/activity/AppIntroductionActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dreamwalker/diabeteseducation/introduction/DevelopActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dreamwalker/diabeteseducation/introduction/ChangeLogActivity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dreamwalker/diabeteseducation/activity/EduWordActivity.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/dialog_custom.xml" />
         <option value="$PROJECT_DIR$/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dreamwalker/diabeteseducation/activity/EduWordActivity.java" />
       </list>
     </option>
   </component>
@@ -2742,10 +2742,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="74" column="51" lean-forward="true" selection-start-line="74" selection-start-column="51" selection-end-line="74" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dreamwalker/diabeteseducation/activity/EduWordActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="70" column="5" lean-forward="true" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+        <state relative-caret-position="285">
+          <caret line="95" column="35" selection-start-line="95" selection-start-column="35" selection-end-line="95" selection-end-column="35" />
           <folding>
             <element signature="e#1518#1563#0" expanded="true" />
             <element signature="e#1601#1646#0" expanded="true" />
@@ -2793,13 +2800,6 @@
             <element signature="e#6291#6343#0" expanded="true" />
             <element signature="e#6361#6413#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="74" column="51" lean-forward="true" selection-start-line="74" selection-start-column="51" selection-end-line="74" selection-end-column="51" />
         </state>
       </provider>
     </entry>
