@@ -1,7 +1,9 @@
 package com.dreamwalker.diabeteseducation.activity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -17,6 +19,8 @@ import android.widget.Toast;
 import com.dreamwalker.diabeteseducation.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    private final long FINISH_INTERVAL_TIME = 2000;  // 2초안에 BACK버튼 한번더 누르면 종료하겠다!
+    private long backPressedTime = 0;  // 그 2초를 측정하기 위한 변수
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setToolbar();
         set();
         setStatusbar();
-        }
+    }
 
     // 툴바
     public void setToolbar() {
@@ -35,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     // 상태바 색 변경
-    public void setStatusbar(){
+    public void setStatusbar() {
         Window window = getWindow();
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
@@ -88,5 +92,35 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    // 뒤로가기 버튼
+    // 한 번 누르면 팝업창
+    @Override
+    public void onBackPressed() {
+        long tempTime = System.currentTimeMillis();
+        long intervalTime = tempTime - backPressedTime;
+        if (0 <= intervalTime && FINISH_INTERVAL_TIME >= intervalTime) {
+            super.onBackPressed();
+        } else {
+            backPressedTime = tempTime;
+            AlertDialog.Builder dialog = new AlertDialog.Builder(this);
+            dialog.setTitle("종료")
+                    .setMessage("정말 종료하실껀가요?")
+                    .setPositiveButton("예", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int which) {
+                            finish();
+                        }
+                    })
+                    .setNegativeButton("아니오", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+                        }
+                    });
+            dialog.create();
+            dialog.show();
+        }
     }
 }
