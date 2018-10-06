@@ -56,11 +56,7 @@ public class EduWordActivity extends AppCompatActivity implements MyRecyclerAdap
         mAdapter = new MyRecyclerAdapter(dataList);
         mAdapter.setOnClickListener(this);
         recyclerView.setAdapter(mAdapter);
-
-        // 구분선
-        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(getApplicationContext(), new LinearLayoutManager(this).getOrientation());
-        recyclerView.addItemDecoration(dividerItemDecoration);
-    }
+        }
 
     // 상태바 색 변경
     public void setStatusbar(){
