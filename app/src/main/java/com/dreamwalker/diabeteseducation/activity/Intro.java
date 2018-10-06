@@ -4,13 +4,14 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.WindowManager;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.dreamwalker.diabeteseducation.R;
 
 // 인트로 : 2초 대기화면
-public class Intro extends Activity {
+public class Intro extends AppCompatActivity {
     Handler handler = new Handler();
     Runnable r = new Runnable() {
         @Override
