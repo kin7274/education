@@ -9,7 +9,7 @@
     android:weightSum="4"
     tools:context=".activity.AppIntroductionActivity">
 
-    <Button
+    <TextView
         android:id="@+id/menu1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -21,7 +21,7 @@
         android:textSize="20sp"
         android:textStyle="normal" />
 
-    <Button
+    <TextView
         android:id="@+id/menu2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -33,7 +33,7 @@
         android:textSize="20sp"
         android:textStyle="normal" />
 
-    <Button
+    <TextView
         android:id="@+id/menu3"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -45,7 +45,7 @@
         android:textSize="20sp"
         android:textStyle="normal" />
 
-    <Button
+    <TextView
         android:id="@+id/menu4"
         android:layout_width="match_parent"
         android:layout_height="0dp"
