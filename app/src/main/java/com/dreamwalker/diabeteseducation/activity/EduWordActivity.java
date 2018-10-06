@@ -8,6 +8,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Display;
 import android.view.Window;
+import android.view.WindowManager;
 
 import com.dreamwalker.diabeteseducation.model.CustomDialog;
 import com.dreamwalker.diabeteseducation.model.MyDialogListener;
@@ -25,7 +26,7 @@ public class EduWordActivity extends AppCompatActivity implements MyRecyclerAdap
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edu_word);
-
+        setStatusbar();
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(false);
 
@@ -59,6 +60,14 @@ public class EduWordActivity extends AppCompatActivity implements MyRecyclerAdap
         // 구분선
         DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(getApplicationContext(), new LinearLayoutManager(this).getOrientation());
         recyclerView.addItemDecoration(dividerItemDecoration);
+    }
+
+    // 상태바 색 변경
+    public void setStatusbar(){
+        Window window = getWindow();
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        window.setStatusBarColor(getResources().getColor(R.color.colorPrimaryPurle));
     }
 
     // 클릭 이벤트

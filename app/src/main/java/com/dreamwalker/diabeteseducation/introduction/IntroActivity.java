@@ -7,6 +7,8 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ExpandableListView;
 import android.widget.ScrollView;
@@ -26,6 +28,7 @@ public class IntroActivity extends AppCompatActivity implements AdapterView.OnIt
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
+        setStatusbar();
         set_scroll();
         abc = (TextView) findViewById(R.id.abc);
         elv = (ExpandableListView) findViewById(R.id.elv);
@@ -39,6 +42,14 @@ public class IntroActivity extends AppCompatActivity implements AdapterView.OnIt
                 return false;
             }
         });
+    }
+
+    // 상태바 색 변경
+    public void setStatusbar(){
+        Window window = getWindow();
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        window.setStatusBarColor(getResources().getColor(R.color.colorPrimaryPurle));
     }
 
     // 스크롤뷰 설정

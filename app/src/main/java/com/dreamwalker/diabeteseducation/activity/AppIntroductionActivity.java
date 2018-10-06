@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,6 +24,7 @@ public class AppIntroductionActivity extends AppCompatActivity implements View.O
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_app_introduction);
         set();
+        setStatusbar();
     }
 
     // 객체 생성
@@ -34,6 +37,14 @@ public class AppIntroductionActivity extends AppCompatActivity implements View.O
         menu2.setOnClickListener(this);
         menu3.setOnClickListener(this);
         menu4.setOnClickListener(this);
+    }
+
+    // 상태바 색 변경
+    public void setStatusbar(){
+        Window window = getWindow();
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        window.setStatusBarColor(getResources().getColor(R.color.colorPrimaryPurle));
     }
 
     // 클릭 이벤트
