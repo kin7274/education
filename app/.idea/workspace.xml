@@ -33,14 +33,79 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="EduWordActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EduWordActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dreamwalker/diabeteseducation/activity/EduWordActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="95" column="34" selection-start-line="95" selection-start-column="34" selection-end-line="95" selection-end-column="34" />
+            <state relative-caret-position="323">
+              <caret line="70" column="5" lean-forward="true" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
               <folding>
+                <element signature="e#1518#1563#0" expanded="true" />
+                <element signature="e#1601#1646#0" expanded="true" />
+                <element signature="e#1684#1729#0" expanded="true" />
+                <element signature="e#1767#1812#0" expanded="true" />
+                <element signature="e#1850#1895#0" expanded="true" />
+                <element signature="e#1933#1978#0" expanded="true" />
+                <element signature="e#2016#2061#0" expanded="true" />
+                <element signature="e#2099#2144#0" expanded="true" />
+                <element signature="e#2182#2227#0" expanded="true" />
+                <element signature="e#2265#2310#0" expanded="true" />
                 <element signature="e#2348#2394#0" expanded="true" />
+                <element signature="e#2432#2478#0" expanded="true" />
+                <element signature="e#2516#2562#0" expanded="true" />
+                <element signature="e#2600#2646#0" expanded="true" />
+                <element signature="e#2684#2730#0" expanded="true" />
+                <element signature="e#4483#4528#0" expanded="true" />
+                <element signature="e#4530#4575#0" expanded="true" />
+                <element signature="e#4577#4622#0" expanded="true" />
+                <element signature="e#4624#4669#0" expanded="true" />
+                <element signature="e#4687#4732#0" expanded="true" />
+                <element signature="e#4734#4779#0" expanded="true" />
+                <element signature="e#4781#4826#0" expanded="true" />
+                <element signature="e#4828#4873#0" expanded="true" />
+                <element signature="e#4891#4936#0" expanded="true" />
+                <element signature="e#4938#4983#0" expanded="true" />
+                <element signature="e#4985#5031#0" expanded="true" />
+                <element signature="e#5033#5079#0" expanded="true" />
+                <element signature="e#5097#5143#0" expanded="true" />
+                <element signature="e#5145#5191#0" expanded="true" />
+                <element signature="e#5193#5239#0" expanded="true" />
+                <element signature="e#5381#5433#0" expanded="true" />
+                <element signature="e#5451#5503#0" expanded="true" />
+                <element signature="e#5521#5573#0" expanded="true" />
+                <element signature="e#5591#5643#0" expanded="true" />
+                <element signature="e#5661#5713#0" expanded="true" />
+                <element signature="e#5731#5783#0" expanded="true" />
+                <element signature="e#5801#5853#0" expanded="true" />
+                <element signature="e#5871#5923#0" expanded="true" />
+                <element signature="e#5941#5993#0" expanded="true" />
+                <element signature="e#6011#6063#0" expanded="true" />
+                <element signature="e#6081#6133#0" expanded="true" />
+                <element signature="e#6151#6203#0" expanded="true" />
+                <element signature="e#6221#6273#0" expanded="true" />
+                <element signature="e#6291#6343#0" expanded="true" />
+                <element signature="e#6361#6413#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="74" column="51" lean-forward="true" selection-start-line="74" selection-start-column="51" selection-end-line="74" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dialog_custom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/layout/dialog_custom.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -2306,10 +2371,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/dreamwalker/diabeteseducation/introduction/DevelopActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dreamwalker/diabeteseducation/introduction/ChangeLogActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dreamwalker/diabeteseducation/activity/EduWordActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/dialog_custom.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/values/strings.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="960" />
     <option name="height" value="1040" />
   </component>
@@ -2356,7 +2423,20 @@
             <path>
               <item name="app" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="diabeteseducation" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
             <path>
               <item name="app" type="1abcf292:AndroidViewProjectNode" />
@@ -2377,6 +2457,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="android.recentlyUsedThemes" value="android:Theme.Material.Light" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="device.picker.selection" value="4300f70a0829502d" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -2508,7 +2589,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="960" height="1040" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -2526,7 +2607,7 @@
       <window_info id="Captures" order="2" weight="0.25" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.119936034" />
       <window_info anchor="bottom" id="Build" weight="0.32890365" />
       <window_info anchor="right" id="Gradle" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -2592,13 +2673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dreamwalker/diabeteseducation/introduction/Index.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dreamwalker/diabeteseducation/introduction/DevelopActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -2620,13 +2694,112 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dreamwalker/diabeteseducation/introduction/MyRecyclerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dreamwalker/diabeteseducation/introduction/Index.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dreamwalker/diabeteseducation/introduction/CardItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dreamwalker/diabeteseducation/model/CardItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="28" lean-forward="true" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/item_card.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/dialog_custom.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dreamwalker/diabeteseducation/activity/EduWordActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="95" column="34" selection-start-line="95" selection-start-column="34" selection-end-line="95" selection-end-column="34" />
+        <state relative-caret-position="323">
+          <caret line="70" column="5" lean-forward="true" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
           <folding>
+            <element signature="e#1518#1563#0" expanded="true" />
+            <element signature="e#1601#1646#0" expanded="true" />
+            <element signature="e#1684#1729#0" expanded="true" />
+            <element signature="e#1767#1812#0" expanded="true" />
+            <element signature="e#1850#1895#0" expanded="true" />
+            <element signature="e#1933#1978#0" expanded="true" />
+            <element signature="e#2016#2061#0" expanded="true" />
+            <element signature="e#2099#2144#0" expanded="true" />
+            <element signature="e#2182#2227#0" expanded="true" />
+            <element signature="e#2265#2310#0" expanded="true" />
             <element signature="e#2348#2394#0" expanded="true" />
+            <element signature="e#2432#2478#0" expanded="true" />
+            <element signature="e#2516#2562#0" expanded="true" />
+            <element signature="e#2600#2646#0" expanded="true" />
+            <element signature="e#2684#2730#0" expanded="true" />
+            <element signature="e#4483#4528#0" expanded="true" />
+            <element signature="e#4530#4575#0" expanded="true" />
+            <element signature="e#4577#4622#0" expanded="true" />
+            <element signature="e#4624#4669#0" expanded="true" />
+            <element signature="e#4687#4732#0" expanded="true" />
+            <element signature="e#4734#4779#0" expanded="true" />
+            <element signature="e#4781#4826#0" expanded="true" />
+            <element signature="e#4828#4873#0" expanded="true" />
+            <element signature="e#4891#4936#0" expanded="true" />
+            <element signature="e#4938#4983#0" expanded="true" />
+            <element signature="e#4985#5031#0" expanded="true" />
+            <element signature="e#5033#5079#0" expanded="true" />
+            <element signature="e#5097#5143#0" expanded="true" />
+            <element signature="e#5145#5191#0" expanded="true" />
+            <element signature="e#5193#5239#0" expanded="true" />
+            <element signature="e#5381#5433#0" expanded="true" />
+            <element signature="e#5451#5503#0" expanded="true" />
+            <element signature="e#5521#5573#0" expanded="true" />
+            <element signature="e#5591#5643#0" expanded="true" />
+            <element signature="e#5661#5713#0" expanded="true" />
+            <element signature="e#5731#5783#0" expanded="true" />
+            <element signature="e#5801#5853#0" expanded="true" />
+            <element signature="e#5871#5923#0" expanded="true" />
+            <element signature="e#5941#5993#0" expanded="true" />
+            <element signature="e#6011#6063#0" expanded="true" />
+            <element signature="e#6081#6133#0" expanded="true" />
+            <element signature="e#6151#6203#0" expanded="true" />
+            <element signature="e#6221#6273#0" expanded="true" />
+            <element signature="e#6291#6343#0" expanded="true" />
+            <element signature="e#6361#6413#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="74" column="51" lean-forward="true" selection-start-line="74" selection-start-column="51" selection-end-line="74" selection-end-column="51" />
         </state>
       </provider>
     </entry>

@@ -9,7 +9,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:background="#ffb7ac"
         android:fontFamily="@font/my_font_family"
         android:gravity="start"
         android:paddingLeft="24dp"
