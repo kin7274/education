@@ -111,11 +111,10 @@
     <string name="assign">담 당</string>
 
     <!--메뉴 4개-->
-    <string name="menu1">1. 당뇨그루에 대해</string>
-    <string name="menu2">2. 버전정보</string>
-    <string name="menu2_0">버전정보</string>
-    <string name="menu3">3. 개발자정보</string>
-    <string name="menu4">4. Change log</string>
+    <string name="menu1">01. 당뇨그루에 대해</string>
+    <string name="menu2">02. 버전정보</string>
+    <string name="menu3">03. 개발자정보</string>
+    <string name="menu4">04. Change log</string>
 
     <!--메뉴 1. 인트로 내용-->
     <string name="Intro_content">안녕하세요! 당뇨그루는 강원대학교 회로 및 시스템 설계연구실에서 진행 중인 당뇨 환자를 위한 생활패턴 자동 획득 및 혈당 관리 프로젝트입니다.\n혈당 자기관리를 위한 생활파라미터 자동 취득 디바이스, 애플리케이션 개발, 당뇨 개인 관리를 위해 시작된 프로젝트입니다.\n당뇨그루 서비스는 당뇨병환자 삶의 질 개선을 가장 큰 목표를 두고있습니다.\n당뇨 자기관리는 식이요법, 운동요법, 약물투약, 신체활동 등으로 구성되며 이들은 혈당 수치에 영향을 미치게됩니다.\n따라서, 당뇨그루는 이 모든 파라미터를 무자각 상태에서 취득할 수 있는 디바이스를 개발하여 애플리케이션에서 자동취득되 개인화된 데이터베이스에 생활 정보가 저장됩니다.\n물론 혈당 수치도 저장 가능합니다.</string>
