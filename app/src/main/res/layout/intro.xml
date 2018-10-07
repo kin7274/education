@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/my_font_family"
         android:gravity="center"
-        android:text="당뇨 뿌셔"
+        android:text="당뇨 뿌셔!"
         android:textColor="#ffffff"
         android:textSize="40sp" />
 
